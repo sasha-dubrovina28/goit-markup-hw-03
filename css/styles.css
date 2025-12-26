@@ -48,6 +48,7 @@ p {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
     color: #434455;
     letter-spacing: 0.02em;
 }
@@ -62,6 +63,7 @@ img {
 section {
     padding: 120px 0;
 }
+
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -104,7 +106,6 @@ section {
 .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo-accent {
@@ -132,6 +133,7 @@ section {
 .site-footer p {
     color: #f4f4fd;
     line-height: 1.5;
+    max-width: 264px;
 }
 .site-footer .logo-footer {
     font-family: "Raleway", sans-serif;
@@ -248,15 +250,31 @@ section {
 .portfolio-card p {
     margin: 0;
 }
+
+.portfolio-card h3 {
+    margin-bottom: 8px;
+}
+
 .site-footer {
     background-color: #2E2F42;
     color: #f4f4fd;
     padding: 100px 0;
     text-align: start;
+    width: 100%;
 }
+
+
+.main-nav {
+    margin-right: auto;
+}
+
 .page-nav {
     display: flex;
     gap: 40px;
+}
+
+.contacts {
+    margin-left: auto;
 }
 
 .page-nav .link {
@@ -266,6 +284,7 @@ section {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
 }
 .page-nav .link:hover,
 .page-nav .link:focus,
@@ -279,7 +298,16 @@ section {
     letter-spacing: 0.02em;
     display: flex;
     gap: 40px;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
 }
+
+.contact-nav .link {
+    display: block;
+    padding: 24px 0;
+}
+
 .contact-nav .link:hover,
 .contact-nav .link:focus,
 .contact-nav .link:active {
